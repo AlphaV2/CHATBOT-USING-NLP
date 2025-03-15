@@ -1,0 +1,326 @@
+[
+    {
+        "tag": "greeting",
+        "patterns": ["Hi", "Hello", "Hey", "How are you?", "What's up?", "Yo!", "Howdy!", "Good morning", "Good evening"],
+        "responses": ["Hey there! Ready to talk crypto?", "Hello! Let’s dive into blockchain vibes.", "Hey! How’s your crypto stash?", "Yo! What’s cooking in your wallet?", "Good morning! Hope your portfolio’s green!"]
+    },
+    {
+        "tag": "goodbye",
+        "patterns": ["Bye", "See you later", "Goodbye", "Take care", "Catch you later", "Adios", "Peace out"],
+        "responses": ["Catch you later! Keep your keys safe.", "See ya! May your trades be profitable.", "Take care! Don’t get rekt!", "Adios! Stay decentralized!", "Peace out! HODL strong."]
+    },
+    {
+        "tag": "thanks",
+        "patterns": ["Thank you", "Thanks", "Thanks a lot", "I appreciate it", "Many thanks"],
+        "responses": ["No worries! Happy to help with crypto.", "You’re welcome! Keep stacking sats.", "Anytime! Let’s keep the blockchain rolling.", "Glad to assist! Crypto’s better with friends."]
+    },
+    {
+        "tag": "crypto_basics",
+        "patterns": ["What is cryptocurrency?", "How does crypto work?", "Why use cryptocurrency?", "Tell me about crypto", "What’s crypto all about?"],
+        "responses": ["Crypto is digital cash powered by blockchain—no banks, just code!", "It’s virtual money on a public ledger called blockchain.", "People use it for fast transfers and freedom from banks."]
+    },
+    {
+        "tag": "blockchain_technology",
+        "patterns": ["What is blockchain?", "How does blockchain work?", "Why is blockchain cool?", "Explain blockchain"],
+        "responses": ["Blockchain’s a tamper-proof ledger across computers—super secure!", "It links blocks of transactions, unchangeable once set.", "It’s cool for cutting out middlemen and staying transparent!"]
+    },
+    {
+        "tag": "popular_cryptocurrencies",
+        "patterns": ["What are the big cryptos?", "Which crypto’s hot?", "Tell me about popular coins"],
+        "responses": ["Big ones are Bitcoin, Ethereum, BNB, and Solana.", "Bitcoin and Ethereum lead the pack—hot stuff!", "Check out BTC, ETH, and maybe some altcoins like Cardano."]
+    },
+    {
+        "tag": "crypto_trading",
+        "patterns": ["How do I trade crypto?", "Any trading tips?", "How do I read crypto charts?"],
+        "responses": ["Join an exchange like Binance, fund it, and trade small!", "HODL through dips or swing trade—don’t FOMO!", "Charts use candlesticks: green’s up, red’s down—watch trends!"]
+    },
+    {
+        "tag": "crypto_security",
+        "patterns": ["How do I keep my crypto safe?", "What’s a wallet?", "Avoiding crypto hacks"],
+        "responses": ["Use a hardware wallet and 2FA—never share keys!", "A wallet holds your crypto keys—cold ones are safest.", "Watch for scams—check links and ignore fake giveaways."]
+    },
+    {
+        "tag": "crypto_regulations",
+        "patterns": ["Is crypto legal?", "What’s the deal with crypto laws?", "Government and crypto?"],
+        "responses": ["It’s legal in many places—check your country!", "Laws are patchy—KYC’s common on exchanges.", "Governments are still figuring it out—more rules soon!"]
+    },
+    {
+        "tag": "crypto_mining",
+        "patterns": ["What’s mining?", "How do I mine crypto?", "Is mining worth it?"],
+        "responses": ["Mining makes new coins by securing the network.", "You need GPUs or ASICs and cheap power—tough gig!", "Maybe worth it with free electricity, but it’s competitive."]
+    },
+    {
+        "tag": "crypto_wallets",
+        "patterns": ["What’s a crypto wallet?", "Best wallet for crypto?", "How do wallets work?"],
+        "responses": ["It’s your digital piggy bank for crypto keys.", "Ledger’s great for safety; MetaMask for ease.", "Public key receives, private key spends—guard it!"]
+    },
+    {
+        "tag": "crypto_future",
+        "patterns": ["What’s crypto’s future?", "Will crypto take over?", "Where’s crypto headed?"],
+        "responses": ["More adoption and DeFi—crypto’s just starting!", "It won’t replace cash but will coexist.", "Banks jumping in means it’s here to stay!"]
+    },
+    {
+        "tag": "crypto_jokes",
+        "patterns": ["Tell me a joke", "Make me laugh", "Crypto joke"],
+        "responses": ["Why’d Bitcoin cry? Too many dips!", "What’s a trader’s pet? A HODL-dog!", "Crypto dating tip: Don’t dump on the pump!"]
+    },
+    {
+        "tag": "crypto_facts",
+        "patterns": ["Tell me a crypto fact", "Give me a fun fact", "Crypto trivia"],
+        "responses": ["First BTC buy: two pizzas for 10,000 coins!", "Satoshi’s stash might be a million BTC!", "Dogecoin started as a joke—now it’s real money!"]
+    },
+    {
+        "tag": "crypto_news",
+        "patterns": ["What’s new in crypto?", "Latest crypto updates?", "Crypto world news?"],
+        "responses": ["Check CoinDesk—crypto moves fast!", "Price swings or Elon tweets—something’s always up!", "Can’t fetch live news yet—stay tuned!"]
+    },
+    {
+        "tag": "crypto_investing",
+        "patterns": ["Should I invest in crypto?", "Good time to buy crypto?", "How much to invest?"],
+        "responses": ["It’s risky but rewarding—don’t bet the farm!", "Dollar-cost average—timing’s tough!", "Start with 5% of your cash and learn!"]
+    },
+    {
+        "tag": "crypto_scams",
+        "patterns": ["How do I spot scams?", "Common crypto scams?", "Is this a scam?"],
+        "responses": ["‘Guaranteed riches’ = scam—research everything!", "Fake ICOs and phishing are big—stay sharp!", "Legit projects have real teams—dig in!"]
+    },
+    {
+        "tag": "bitcoin_info",
+        "patterns": ["What is Bitcoin?", "Tell me about Bitcoin", "How’s Bitcoin work?"],
+        "responses": ["Bitcoin’s the first crypto—digital gold!", "Decentralized money by a mystery genius.", "Runs on blockchain—secure and borderless."]
+    },
+    {
+        "tag": "ethereum_info",
+        "patterns": ["What is Ethereum?", "Tell me about Ethereum", "Ethereum basics"],
+        "responses": ["Ethereum’s a platform for apps and contracts.", "Its coin, Ether, powers a blockchain world!", "Like Bitcoin but with superpowers."]
+    },
+    {
+        "tag": "ripple_info",
+        "patterns": ["What is Ripple?", "Tell me about Ripple", "How’s Ripple different?"],
+        "responses": ["Ripple’s fast payment crypto—banks dig it!", "XRP’s built for quick, cheap transfers.", "Less decentralized but speedy."]
+    },
+    {
+        "tag": "dogecoin_info",
+        "patterns": ["What is Dogecoin?", "Tell me about Dogecoin", "What’s Doge?"],
+        "responses": ["Dogecoin’s a meme coin that went big!", "Started as a joke—now it’s Elon’s fave.", "Fun crypto with a Shiba Inu mascot!"]
+    },
+    {
+        "tag": "shiba_inu_info",
+        "patterns": ["What is Shiba Inu?", "Tell me about SHIB", "What’s Shiba coin?"],
+        "responses": ["SHIB’s a Dogecoin rival—meme coin madness!", "It’s an Ethereum token with big dreams.", "A community-driven coin—woof!"]
+    },
+    {
+        "tag": "market_trends",
+        "patterns": ["What’s the market like?", "Are prices up?", "How’s crypto doing?"],
+        "responses": ["Crypto’s wild—check CoinMarketCap!", "Rollercoaster vibes—up or down daily!", "Volatile as always—DYOR!"]
+    },
+    {
+        "tag": "crypto_price_bitcoin",
+        "patterns": ["What’s Bitcoin’s price?", "How much is Bitcoin?", "Bitcoin price now"],
+        "responses": ["Fetching Bitcoin price..."]
+    },
+    {
+        "tag": "crypto_price_ethereum",
+        "patterns": ["What’s Ethereum’s price?", "How much is Ethereum?", "Ether price"],
+        "responses": ["Fetching Ethereum price..."]
+    },
+    {
+        "tag": "crypto_price_dogecoin",
+        "patterns": ["What’s Dogecoin’s price?", "How much is Doge?", "Dogecoin value"],
+        "responses": ["Fetching Dogecoin price..."]
+    },
+    {
+        "tag": "satoshi_nakamoto",
+        "patterns": ["Who is Satoshi Nakamoto?", "Tell me about Satoshi", "Satoshi facts"],
+        "responses": ["Satoshi’s Bitcoin’s mystery creator—gone since 2011!", "Published Bitcoin’s whitepaper in 2008.", "A legend who sparked a revolution!"]
+    },
+    {
+        "tag": "vitalik_buterin",
+        "patterns": ["Who is Vitalik Buterin?", "Tell me about Vitalik", "Ethereum founder"],
+        "responses": ["Vitalik’s Ethereum’s brain—launched it in 2015!", "A young genius pushing smart contracts.", "He’s a crypto visionary—pretty cool dude!"]
+    },
+    {
+        "tag": "elon_musk",
+        "patterns": ["What’s Elon Musk’s crypto deal?", "Elon and crypto", "Does Elon like crypto?"],
+        "responses": ["Elon’s a Dogecoin fan—tweets move markets!", "He’s pro-crypto—Tesla even held Bitcoin!", "Musk’s a wild card—loves memecoins!"]
+    },
+    {
+        "tag": "proof_of_work",
+        "patterns": ["What is Proof of Work?", "How does PoW work?", "PoW explained"],
+        "responses": ["PoW’s miners solving puzzles for security!", "Bitcoin uses it—lots of computing power.", "Tough but keeps the chain honest!"]
+    },
+    {
+        "tag": "proof_of_stake",
+        "patterns": ["What is Proof of Stake?", "How does PoS work?", "PoS vs PoW"],
+        "responses": ["PoS uses staked coins to validate—green vibes!", "Ethereum’s on it—no mining needed!", "Less energy than PoW—future-proof!"]
+    },
+    {
+        "tag": "nfts",
+        "patterns": ["What are NFTs?", "Tell me about NFTs", "NFT basics"],
+        "responses": ["NFTs are unique blockchain goodies—art, mostly!", "Each one’s special—can’t swap ‘em like coins.", "Built on Ethereum—digital bragging rights!"]
+    },
+    {
+        "tag": "mining_rewards",
+        "patterns": ["What are mining rewards?", "How do miners earn?", "Mining payouts"],
+        "responses": ["Miners get coins for securing the chain!", "Bitcoin’s reward halves every four years—6.25 BTC now!", "Incentives keep the network humming!"]
+    },
+    {
+        "tag": "hashing",
+        "patterns": ["What is hashing?", "How does hashing work?", "Crypto hashing"],
+        "responses": ["Hashing turns data into a fixed code—crypto’s lock!", "It’s a one-way trick—secure and fast!", "Miners hash to solve blocks—brain teaser stuff!"]
+    },
+    {
+        "tag": "nodes",
+        "patterns": ["What are nodes?", "Tell me about nodes", "Blockchain nodes"],
+        "responses": ["Nodes are computers running the blockchain show!", "They store and sync the ledger—team players!", "More nodes, stronger network—decentralized magic!"]
+    },
+    {
+        "tag": "cryptographic_security",
+        "patterns": ["What’s cryptographic security?", "How’s crypto secure?", "Crypto cryptography"],
+        "responses": ["Crypto uses math tricks to lock it tight!", "Public-private keys keep your funds safe.", "Hackers hate it—too tough to crack!"]
+    },
+    {
+        "tag": "data_structures",
+        "patterns": ["Crypto data structures?", "Blockchain data?", "How’s blockchain built?"],
+        "responses": ["Blockchain’s a chain of blocks—simple but genius!", "Merkle trees pack transactions—efficient!", "It’s a distributed list—nodes share the load!"]
+    },
+    {
+        "tag": "innovations_crypto",
+        "patterns": ["What’s new in crypto?", "Crypto innovations?", "Future crypto tech"],
+        "responses": ["DeFi, NFTs, and layer-2—crypto’s evolving!", "Smart contracts are shaking things up!", "Faster chains like Solana—next-level stuff!"]
+    },
+    {
+        "tag": "defi",
+        "patterns": ["What is DeFi?", "Tell me about DeFi", "Decentralized finance"],
+        "responses": ["DeFi’s finance without banks—blockchain rules!", "Lending, borrowing, all on-chain—wild!", "Ethereum’s DeFi hub—open to all!"]
+    },
+    {
+        "tag": "smart_contracts",
+        "patterns": ["What are smart contracts?", "How do smart contracts work?", "Smart contract basics"],
+        "responses": ["Smart contracts are auto-deals on blockchain!", "Code runs when conditions hit—no middleman!", "Ethereum’s baby—trust in code, not people!"]
+    },
+    {
+        "tag": "crypto_exchanges",
+        "patterns": ["What’s a crypto exchange?", "Best crypto exchange?", "How do exchanges work?"],
+        "responses": ["Exchanges swap crypto for cash or other coins!", "Binance, Coinbase—big names to start!", "They match buyers and sellers—fee’s the catch!"]
+    },
+    {
+        "tag": "crypto_adoption",
+        "patterns": ["Is crypto getting big?", "Crypto adoption?", "Who uses crypto?"],
+        "responses": ["Crypto’s growing—shops take BTC now!", "El Salvador’s all-in—Bitcoin’s legal there!", "Millions use it—slowly going mainstream!"]
+    },
+    {
+        "tag": "crypto_risks",
+        "patterns": ["What are crypto risks?", "Is crypto risky?", "Crypto dangers"],
+        "responses": ["Volatility’s nuts—prices swing hard!", "Hacks happen—guard your keys!", "Regulations could shake it—wild west vibes!"]
+    },
+    {
+        "tag": "crypto_community",
+        "patterns": ["Crypto community?", "Who’s into crypto?", "Crypto fans"],
+        "responses": ["Crypto’s got HODLers, traders, and geeks!", "Twitter’s crypto central—wild debates!", "From devs to meme lords—it’s a big crew!"]
+    },
+    {
+        "tag": "unknown",
+        "patterns": ["What?", "Huh?", "I don’t get it"],
+        "responses": ["Lost me there—try again?", "Not sure—crypto stuff maybe?", "Rewind—ask something else!"]
+    },
+    {
+        "tag": "help",
+        "patterns": ["Help", "How does this work?", "What can you do?"],
+        "responses": ["I’m your crypto bot—ask anything!", "Here for crypto Qs and chats!", "Need crypto help? I’m on it!"]
+    },
+    {
+        "tag": "options",
+        "patterns": ["What can you do?", "What’s your job?", "How can you help?"],
+        "responses": ["Chat crypto, prices, or jokes—your call!", "I answer crypto Qs and lighten the mood!", "Crypto facts, tips, and more—hit me up!"]
+    },{
+        "tag": "crypto_price_tether",
+        "patterns": ["What’s Tether’s price?", "How much is Tether?", "USDT price"],
+        "responses": ["Fetching Tether price..."]
+    },
+    {
+        "tag": "crypto_price_binancecoin",
+        "patterns": ["What’s Binance Coin’s price?", "How much is BNB?", "BNB price"],
+        "responses": ["Fetching Binance Coin price..."]
+    },
+    {
+        "tag": "crypto_price_solana",
+        "patterns": ["What’s Solana’s price?", "How much is Solana?", "SOL price"],
+        "responses": ["Fetching Solana price..."]
+    },
+    {
+        "tag": "crypto_price_xrp",
+        "patterns": ["What’s XRP’s price?", "How much is Ripple?", "XRP price"],
+        "responses": ["Fetching XRP price..."]
+    },
+    {
+        "tag": "crypto_price_usdcoin",
+        "patterns": ["What’s USD Coin’s price?", "How much is USDC?", "USDC price"],
+        "responses": ["Fetching USD Coin price..."]
+    },
+    {
+        "tag": "crypto_price_cardano",
+        "patterns": ["What’s Cardano’s price?", "How much is Cardano?", "ADA price"],
+        "responses": ["Fetching Cardano price..."]
+    },
+    {
+        "tag": "crypto_price_dogecoin",
+        "patterns": ["What’s Dogecoin’s price?", "How much is Doge?", "Dogecoin value", "DOGE price"],
+        "responses": ["Fetching Dogecoin price..."]
+    },
+    {
+        "tag": "crypto_price_avalanche",
+        "patterns": ["What’s Avalanche’s price?", "How much is Avalanche?", "AVAX price"],
+        "responses": ["Fetching Avalanche price..."]
+    },
+    {
+        "tag": "crypto_price_shibainu",
+        "patterns": ["What’s Shiba Inu’s price?", "How much is SHIB?", "Shiba price"],
+        "responses": ["Fetching Shiba Inu price..."]
+    },
+    {
+        "tag": "crypto_price_chainlink",
+        "patterns": ["What’s Chainlink’s price?", "How much is Chainlink?", "LINK price"],
+        "responses": ["Fetching Chainlink price..."]
+    },
+    {
+        "tag": "crypto_price_polkadot",
+        "patterns": ["What’s Polkadot’s price?", "How much is Polkadot?", "DOT price"],
+        "responses": ["Fetching Polkadot price..."]
+    },
+    {
+        "tag": "crypto_price_tron",
+        "patterns": ["What’s TRON’s price?", "How much is TRON?", "TRX price"],
+        "responses": ["Fetching TRON price..."]
+    },
+    {
+        "tag": "crypto_price_polygon",
+        "patterns": ["What’s Polygon’s price?", "How much is Polygon?", "MATIC price"],
+        "responses": ["Fetching Polygon price..."]
+    },
+    {
+        "tag": "crypto_price_toncoin",
+        "patterns": ["What’s Toncoin’s price?", "How much is TON?", "TON price"],
+        "responses": ["Fetching Toncoin price..."]
+    },
+    {
+        "tag": "crypto_price_internetcomputer",
+        "patterns": ["What’s Internet Computer’s price?", "How much is ICP?", "ICP price"],
+        "responses": ["Fetching Internet Computer price..."]
+    },
+    {
+        "tag": "crypto_price_wrappedbitcoin",
+        "patterns": ["What’s Wrapped Bitcoin’s price?", "How much is WBTC?", "WBTC price"],
+        "responses": ["Fetching Wrapped Bitcoin price..."]
+    },
+    {
+        "tag": "crypto_price_aptos",
+        "patterns": ["What’s Aptos’s price?", "How much is Aptos?", "APT price"],
+        "responses": ["Fetching Aptos price..."]
+    },
+    {
+        "tag": "crypto_price_near",
+        "patterns": ["What’s NEAR’s price?", "How much is NEAR?", "NEAR price"],
+        "responses": ["Fetching NEAR price..."]
+    }
+]
