@@ -144,13 +144,63 @@ def main():
             st.write("No conversation history yet.")
 
     elif choice == "About":
-        st.write("This chatbot answers crypto queries and greetings, fetching live prices for the top 20 coins via CoinGecko!")
+        st.write("The Crypto Q/A Chatbot is an NLP-driven assistant designed to answer cryptocurrency queries and fetch live prices for the top 20 coins, built as part of an AICTE internship project.")
+        
         st.subheader("Project Overview:")
-        st.write("1. NLP and Logistic Regression handle intents.")
-        st.write("2. Streamlit powers the interface with real-time price data.")
+        st.write("""
+        This project combines natural language processing and real-time data integration to deliver an interactive crypto tool:
+        1. **Intent Recognition**: Uses NLP techniques and Logistic Regression to classify user queries from a custom dataset.
+        2. **Live Price Fetching**: Integrates the CoinGecko API to provide real-time prices for top cryptocurrencies.
+        3. **Web Interface**: Powered by Streamlit, offering a seamless chat experience with history tracking.
+        """)
+
+        st.subheader("Implementation Details:")
+        st.write("""
+        - **Core Logic**: 
+        - `chatbot.py` orchestrates NLP, API calls, and UI rendering.
+        - Chatbot function maps intents to static or dynamic responses.
+        - **NLP Pipeline**: 
+        - TF-IDF Vectorizer converts text to features.
+        - Logistic Regression predicts intents with high accuracy.
+        - **Data Handling**: 
+        - `intents.json` stores 50+ intents (e.g., greetings, price queries).
+        - `chat_log.csv` logs conversations with timestamps.
+        - **API Integration**: CoinGecko provides prices for coins like Bitcoin, Ethereum, and Solana.
+        """)
+
         st.subheader("Dataset:")
-        st.write("- Intents: e.g., 'crypto_price_bitcoin', 'greeting'")
-        st.write("- Live data: Sourced from CoinGecko API")
+        st.write("""
+        - **Intents**: 
+        - Examples: 'crypto_price_bitcoin', 'greeting', 'bitcoin_info'.
+        - Covers greetings, crypto basics, and price queries for top 20 coins.
+        - **Live Data**: 
+        - Sourced from CoinGecko API, fetching USD prices in real time.
+        - **Structure**: JSON format with tags, patterns, and responses.
+        """)
+
+        st.subheader("Technologies Used:")
+        st.write("""
+        - **Python 3.8+**: Core language for development.
+        - **Streamlit**: Interactive web app framework.
+        - **Scikit-learn**: NLP and ML components (TF-IDF, Logistic Regression).
+        - **NLTK**: Text preprocessing (Punkt tokenizer).
+        - **Requests**: HTTP requests to CoinGecko API.
+        """)
+
+        st.subheader("Future Scope:")
+        st.write("""
+        - Expand intents to include DeFi, staking, and market trends.
+        - Upgrade to advanced NLP models (e.g., BERT) for better accuracy.
+        - Add price caching to reduce API calls and improve performance.
+        - Integrate additional APIs for news or trading insights.
+        """)
+
+        st.subheader("Acknowledgments:")
+        st.write("""
+        - Developed under AICTE internship guidance.
+        - Powered by CoinGecko’s free API and open-source tools.
+        - Inspired by the growing crypto community.
+        """)
 
 if __name__ == '__main__':
     main()
