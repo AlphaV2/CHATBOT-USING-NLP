@@ -322,5 +322,18 @@
         "tag": "crypto_price_near",
         "patterns": ["What’s NEAR’s price?", "How much is NEAR?", "NEAR price"],
         "responses": ["Fetching NEAR price..."]
-    }
+    },
+    {
+        "tag": "fear_and_greed",
+        "patterns": [
+          "what is the fear and greed index",
+          "fear and greed",
+          "market sentiment",
+          "fng",
+          "how’s the crypto market feeling"
+        ],
+        "responses": [
+          "Let me check the Fear & Greed Index for you!"
+        ]
+      }
 ]

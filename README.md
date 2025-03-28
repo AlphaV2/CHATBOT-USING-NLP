@@ -88,12 +88,12 @@ Run the Chatbot: Start the Streamlit app:
 
 Project Structure
 text
-crypto-chatbot/
-├── main.py              # Main script with chatbot logic
-├── intents.json         # Intent dataset for NLP training
-├── chat_log.csv         # Generated file for conversation history
-├── requirements.txt     # List of Python dependencies
-└── README.md            # Project documentation
+    crypto-chatbot/
+    ├── main.py              # Main script with chatbot logic
+    ├── intents.json         # Intent dataset for NLP training
+    ├── chat_log.csv         # Generated file for conversation history
+    ├── requirements.txt     # List of Python dependencies
+    └── README.md            # Project documentation
 How It Works
 
     NLP Pipeline:

@@ -9,6 +9,7 @@ import random
 import requests
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.linear_model import LogisticRegression
+from features.fear_greed import get_fear_greed_index  # New import
 
 # Disable SSL verification (only if needed)
 ssl._create_default_https_context = ssl._create_unverified_context
@@ -86,6 +87,9 @@ def chatbot(input_text):
                 crypto_id = crypto_map[tag]
                 price = get_crypto_price(crypto_id)
                 return f"The current price of {crypto_id.replace('-', ' ').capitalize()} is {price} USD."
+            # Handle Fear and Greed Index
+            elif tag == "fear_and_greed":
+                return get_fear_greed_index()
             # Return static responses for non-price intents
             return random.choice(intent['responses'])
     return "Sorry, I didn’t catch that—try asking about crypto prices or something else!"
@@ -101,10 +105,10 @@ def main():
 
     if choice == "Home":
         st.write("Welcome to the CryptoQ chatbot!")
-        st.write("Ask me about the top 20 cryptocurrencies prices (LIVE PRICES IN USD) or say hi. Examples:")
+        st.write("Ask me about the top 20 cryptocurrencies prices (LIVE PRICES IN USD), the Fear & Greed Index, or say hi. Examples:")
         st.write("- 'What’s the price of Bitcoin?'")
         st.write("- 'How much is Solana?'")
-        st.write("- 'What is Ethereum?'")
+        st.write("- 'What is the Fear and Greed Index?'")
         st.write("- 'Hello!'")
 
         if not os.path.exists('chat_log.csv'):
@@ -151,13 +155,15 @@ def main():
         This project combines natural language processing and real-time data integration to deliver an interactive crypto tool:
         1. **Intent Recognition**: Uses NLP techniques and Logistic Regression to classify user queries from a custom dataset.
         2. **Live Price Fetching**: Integrates the CoinGecko API to provide real-time prices for top cryptocurrencies.
-        3. **Web Interface**: Powered by Streamlit, offering a seamless chat experience with history tracking.
+        3. **Fear & Greed Index**: Uses CoinMarketCap API to fetch market sentiment data.
+        4. **Web Interface**: Powered by Streamlit, offering a seamless chat experience with history tracking.
         """)
 
         st.subheader("Implementation Details:")
         st.write("""
         - **Core Logic**: 
         - `chatbot.py` orchestrates NLP, API calls, and UI rendering.
+        - `fear_greed.py` handles Fear & Greed Index API integration.
         - Chatbot function maps intents to static or dynamic responses.
         - **NLP Pipeline**: 
         - TF-IDF Vectorizer converts text to features.
@@ -165,16 +171,16 @@ def main():
         - **Data Handling**: 
         - `intents.json` stores 50+ intents (e.g., greetings, price queries).
         - `chat_log.csv` logs conversations with timestamps.
-        - **API Integration**: CoinGecko provides prices for coins like Bitcoin, Ethereum, and Solana.
+        - **API Integration**: CoinGecko for prices, CoinMarketCap for Fear & Greed Index.
         """)
 
         st.subheader("Dataset:")
         st.write("""
         - **Intents**: 
-        - Examples: 'crypto_price_bitcoin', 'greeting', 'bitcoin_info'.
-        - Covers greetings, crypto basics, and price queries for top 20 coins.
+        - Examples: 'crypto_price_bitcoin', 'greeting', 'fear_and_greed'.
+        - Covers greetings, crypto basics, price queries, and market sentiment.
         - **Live Data**: 
-        - Sourced from CoinGecko API, fetching USD prices in real time.
+        - Sourced from CoinGecko (prices) and CoinMarketCap (Fear & Greed).
         - **Structure**: JSON format with tags, patterns, and responses.
         """)
 
@@ -184,21 +190,21 @@ def main():
         - **Streamlit**: Interactive web app framework.
         - **Scikit-learn**: NLP and ML components (TF-IDF, Logistic Regression).
         - **NLTK**: Text preprocessing (Punkt tokenizer).
-        - **Requests**: HTTP requests to CoinGecko API.
+        - **Requests**: HTTP requests to CoinGecko and CoinMarketCap APIs.
         """)
 
         st.subheader("Future Scope:")
         st.write("""
         - Expand intents to include DeFi, staking, and market trends.
         - Upgrade to advanced NLP models (e.g., BERT) for better accuracy.
-        - Add price caching to reduce API calls and improve performance.
+        - Add price and sentiment caching to reduce API calls.
         - Integrate additional APIs for news or trading insights.
         """)
 
         st.subheader("Acknowledgments:")
         st.write("""
         - Developed under AICTE internship guidance.
-        - Powered by CoinGecko’s free API and open-source tools.
+        - Powered by CoinGecko and CoinMarketCap APIs and open-source tools.
         - Inspired by the growing crypto community.
         """)
 
